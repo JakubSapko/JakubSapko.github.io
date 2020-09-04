@@ -1,0 +1,145 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+.bg-dark {
+  background-color: transparent !important;
+}
+
+.bgimg-1{
+  position: relative;
+  opacity: 0.80;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("imgs/roslinka.jpg");
+  min-height: 100%;
+}
+
+.myphoto{
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 45%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  z-index: 0;
+}
+
+
+
+
+
+.caption span.border {
+
+  background-color: #333333;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+  z-index: 0;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1{
+    background-image: url("imgs/warsaw.jpg");
+    background-attachment: scroll;
+  }
+}
+
+/* Sidebar & burger*/
+.sidenav {
+height: 100%;
+width: 0%;
+position: absolute;
+z-index: 9999;
+left: 0;
+background-color: #111;
+overflow-x: hidden;
+transition: 0.5s;
+padding-top: 60px;
+}
+
+.burger{
+font-size:30px;
+cursor:pointer;
+margin:30px;
+color:white;"
+z-index: 9999;
+}
+
+.sidenav a {
+padding: 8px 8px 8px 32px;
+margin-top: 3%;
+text-decoration: none;
+font-size: 25px;
+color: #818181;
+display: block;
+transition: 0.3s;
+text-align: center;
+}
+
+.sidenav a:hover {
+color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+position: absolute;
+top: 0;
+right: 25px;
+font-size: 36px;
+margin-left: 50px;
+color: white;
+}
+
+
+@media screen and (max-height: 450px) {
+.sidenav {padding-top: 15px;}
+.sidenav a {font-size: 18px;}
+}
+
+
+.aboutsite{
+  background-color: cyan;
+  font-size: 26px;
+  color: black;
+}
+
+.tech-icon{
+  margin-top: 10px;
+  max-width: 31%;
+}
+
+.tech-icon-last{
+  margin-top: 10px;
+  max-width: 31%;
+  display: inline;
+  margin-left: 18%;
+}
+
+.tool-icon{
+  margin-top: 10px;
+  max-width: 15%;
+  display: inline;
+  margin-left: 15%;
+}
