@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+* {
+    border: 1px solid red;
+}
+
+.panel {
+    min-height: 100vh;
+}
+
+.layout-container {
+    background-color: rgba(248, 255, 255, 0.826);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.landing-container {
+    @extend .panel;
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 10fr 1.5fr;
+}
+
+.welcome-text-container {
+    grid-column: 2;
+}
+
+.theme-switcher-container {
+    grid-column: 3;
+}
+
+.icons {
+    background-color: cyan;
+    position: fixed;
+}
