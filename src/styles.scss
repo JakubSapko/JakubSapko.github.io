@@ -30,6 +30,8 @@ body {
 
 .welcome-text-container {
     grid-column: 2;
+    display: flex;
+    flex-direction: column;
 }
 
 .theme-switcher-container {
@@ -37,6 +39,54 @@ body {
 }
 
 .icons {
-    background-color: cyan;
+    top: 80vh;
+    left: 1rem;
     position: fixed;
+    width: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    * {
+        width: 3.5rem;
+        height: 3.5rem;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+@keyframes wave-anim {
+    0% {
+        transform: rotate(0deg);
+    }
+    10% {
+        transform: rotate(14deg);
+    }
+    20% {
+        transform: rotate(-8deg);
+    }
+    30% {
+        transform: rotate(14deg);
+    }
+    40% {
+        transform: rotate(-4deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+    60% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.hello-emoji {
+    animation-name: wave-anim;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
 }
