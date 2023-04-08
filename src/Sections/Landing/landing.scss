@@ -1,0 +1,94 @@
+.landing-container {
+    @extend .panel;
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 10fr 1.5fr;
+}
+
+.welcome-text-container {
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+    font-size: 32px;
+    place-self: center;
+    gap: 3rem;
+    margin: 1.5rem;
+}
+
+.hello-text {
+    height: 3rem;
+}
+
+.typedText {
+    @include typed(
+        "Hi there!",
+        "今日は!",
+        "God dag!",
+        "Cześć!",
+        null,
+        (
+            caret-width: 2px,
+            caret-space: 2px,
+        )
+    );
+}
+
+.hello-emoji {
+    animation-name: wave-anim;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+}
+
+@keyframes wave-anim {
+    0% {
+        transform: rotate(0deg);
+    }
+    10% {
+        transform: rotate(14deg);
+    }
+    20% {
+        transform: rotate(-8deg);
+    }
+    30% {
+        transform: rotate(14deg);
+    }
+    40% {
+        transform: rotate(-4deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+    60% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.get-in-touch {
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.side-container {
+    grid-column: 2;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.theme-switcher-container {
+}
+
+.icons-container {
+    margin-top: auto;
+    margin-bottom: 1rem;
+    align-self: flex-end;
+    place-self: center;
+}
