@@ -7,10 +7,15 @@
 
 body {
     margin: 0;
+    background-color: rgba(248, 255, 255, 0.826);
     padding: 0;
     height: 100%;
     width: 100%;
     font-family: "Raleway", "Noto Sans JP";
+}
+
+::selection {
+    background-color: rgb(255, 175, 69);
 }
 
 * {
@@ -22,7 +27,6 @@ body {
 }
 
 .layout-container {
-    background-color: rgba(248, 255, 255, 0.826);
     height: 100vh;
     display: flex;
     flex-direction: column;

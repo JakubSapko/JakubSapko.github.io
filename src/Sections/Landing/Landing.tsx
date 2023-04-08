@@ -21,12 +21,14 @@ export const Landing = () => {
                         possible" mindset and a focus on creating great
                         experiences 👨🏼‍💻
                     </div>
-                    <div
-                        className="get-in-touch"
-                        onClick={() => scrollToBottom()}
-                    >
+                    <div className="get-in-touch">
                         Get in touch with me!{" "}
-                        <div className="down-hand">👇🏼</div>
+                        <div
+                            className="down-hand"
+                            onClick={() => scrollToBottom()}
+                        >
+                            👇🏼
+                        </div>
                     </div>
                 </div>
                 <div className="side-container">
@@ -36,7 +38,6 @@ export const Landing = () => {
                     </div>
                 </div>
             </div>
-            <div className="break-line" />
         </>
     );
 };
