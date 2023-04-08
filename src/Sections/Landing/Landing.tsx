@@ -21,7 +21,7 @@ export const Landing = () => {
                     👨🏼‍💻
                 </div>
                 <div className="get-in-touch" onClick={() => scrollToBottom()}>
-                    Get in touch with me! 👇🏼
+                    Get in touch with me! <div className="down-hand">👇🏼</div>
                 </div>
             </div>
             <div className="side-container">
