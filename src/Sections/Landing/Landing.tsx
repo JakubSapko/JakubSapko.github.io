@@ -15,10 +15,9 @@ export const Landing = () => {
                     <span className="hello-emoji">👋🏼</span>
                 </div>
                 <div>
-                    I'm <span className="name">Jakub Sapko</span>, <br /> an
-                    aspiring full-stack developer with the "everything's
-                    possible" mindset and a focus on creating great experiences
-                    👨🏼‍💻
+                    I'm <span className="name">Jakub Sapko</span>, <br /> a
+                    full-stack developer with the "everything's possible"
+                    mindset and a focus on creating great experiences 👨🏼‍💻
                 </div>
                 <div className="get-in-touch" onClick={() => scrollToBottom()}>
                     Get in touch with me! <div className="down-hand">👇🏼</div>
