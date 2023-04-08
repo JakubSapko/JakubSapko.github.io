@@ -1,3 +1,5 @@
+import { Icons } from "./Icons/Icons";
+
 export const Landing = () => {
     return (
         <div className="landing-container">
@@ -14,7 +16,12 @@ export const Landing = () => {
                 </div>
                 <div className="get-in-touch">Get in touch with me! 👇🏼</div>
             </div>
-            <div className="theme-switcher-container">elo3</div>
+            <div className="side-container">
+                <div className="theme-switcher-container">elo3</div>
+                <div className="icons-container">
+                    <Icons />
+                </div>
+            </div>
         </div>
     );
 };

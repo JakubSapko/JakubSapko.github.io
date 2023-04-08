@@ -1,12 +1,10 @@
-import { Icons } from "./Icons";
-import { Landing } from "./Landing";
-import { Layout } from "./Layout";
+import { Landing } from "./Sections/Landing/Landing";
+import { Layout } from "./components/Layout";
 
 export const App = () => {
     return (
         <Layout>
             <Landing />
-            <Icons />
             <div className="panel">test</div>
         </Layout>
     );
