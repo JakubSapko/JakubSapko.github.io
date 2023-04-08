@@ -1,6 +1,12 @@
 import { Icons } from "./Icons/Icons";
 
 export const Landing = () => {
+    const scrollToBottom = () => {
+        window.scrollTo({
+            top: document.documentElement.scrollHeight,
+            behavior: "smooth",
+        });
+    };
     return (
         <div className="landing-container">
             <div className="welcome-text-container">
@@ -14,7 +20,9 @@ export const Landing = () => {
                     possible" mindset and a focus on creating great experiences
                     👨🏼‍💻
                 </div>
-                <div className="get-in-touch">Get in touch with me! 👇🏼</div>
+                <div className="get-in-touch" onClick={() => scrollToBottom()}>
+                    Get in touch with me! 👇🏼
+                </div>
             </div>
             <div className="side-container">
                 <div className="theme-switcher-container">elo3</div>
