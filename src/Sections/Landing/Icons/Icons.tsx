@@ -4,10 +4,14 @@ export const Icons = () => {
     return (
         <div className="icons">
             <IconContext.Provider value={{ color: "#333" }}>
-                <BsGithub />
+                <a href="https://github.com/JakubSapko">
+                    <BsGithub />
+                </a>
             </IconContext.Provider>
             <IconContext.Provider value={{ color: "#0077B5" }}>
-                <BsLinkedin />
+                <a href="https://www.linkedin.com/in/jakub-sapko/">
+                    <BsLinkedin />
+                </a>
             </IconContext.Provider>
         </div>
     );
