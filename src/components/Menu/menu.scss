@@ -1,0 +1,15 @@
+.menu {
+    position: fixed;
+    right: 0%;
+    top: 40%;
+    margin-right: 2rem;
+    color: rgba(128, 128, 128, 0.599);
+    font-size: 16px;
+    font-weight: 500;
+    opacity: 0%;
+    p:hover {
+        cursor: pointer;
+        color: rgba(88, 88, 88, 0.835);
+        text-decoration: underline 1.5px solid rgb(255, 175, 69);
+    }
+}

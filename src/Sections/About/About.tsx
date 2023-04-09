@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import photo from "../../assets/photome.jpg";
-import { Menu } from "../../components/Menu";
+import { Menu } from "../../components/Menu/Menu";
 import useIntersectionObserver from "../../hooks/useIntersectionObserver";
 
 export const About = () => {
