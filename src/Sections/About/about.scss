@@ -14,9 +14,11 @@
     font-size: 24px;
     max-width: 60%;
     margin-right: 10rem;
+    opacity: 0%;
 }
 
 .photo {
+    transform: translateX(-100%);
     max-width: 20rem;
     border-radius: 50%;
     box-shadow: 8px 8px 8px rgb(255, 175, 69);
@@ -39,10 +41,45 @@
     color: rgba(128, 128, 128, 0.599);
     font-size: 16px;
     font-weight: 500;
+    opacity: 0%;
     p:hover {
         cursor: pointer;
         color: rgba(88, 88, 88, 0.835);
         text-decoration: underline 1.5px solid rgb(255, 175, 69);
+    }
+}
+
+.slide-in {
+    animation: slide-in 3.5s forwards;
+    -webkit-animation: slide-in 3.5s forwards;
+}
+
+.fade-in {
+    animation: fade-in 1.5s forwards;
+    -webkit-animation: fade-in 1.5s forwards;
+}
+
+@-webkit-keyframes slide-in {
+    100% {
+        -webkit-transform: translateX(0%);
+    }
+}
+
+@keyframes slide-in {
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@-webkit-keyframes fade-in {
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in {
+    100% {
+        opacity: 1;
     }
 }
 

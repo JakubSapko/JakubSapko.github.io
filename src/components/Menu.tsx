@@ -1,4 +1,15 @@
-export const Menu = () => {
+import { useEffect } from "react";
+interface IMenu {
+    isVisible: boolean;
+}
+export const Menu: React.FC<IMenu> = ({ isVisible }) => {
+    useEffect(() => {
+        if (isVisible) {
+            const menu = document.getElementById("menu");
+            menu?.classList.add("fade-in");
+        }
+    }, [isVisible]);
+
     const handleClickScroll = (id: string) => {
         const element = document.getElementById(id);
         if (element) {
@@ -6,7 +17,7 @@ export const Menu = () => {
         }
     };
     return (
-        <div className="menu">
+        <div id="menu" className="menu">
             <p onClick={() => handleClickScroll("start")}>1 - Start</p>
             <p onClick={() => handleClickScroll("about")}>2 - About</p>
             <p onClick={() => handleClickScroll("technologies")}>
