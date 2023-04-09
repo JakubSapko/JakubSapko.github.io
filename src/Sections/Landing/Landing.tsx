@@ -1,3 +1,4 @@
+import { ThemeSwitcher } from "../../components/ThemeSwitcher";
 import { Icons } from "./Icons/Icons";
 
 export const Landing = () => {
@@ -9,7 +10,7 @@ export const Landing = () => {
     };
     return (
         <>
-            <div id="start" className="landing-container">
+            <div id="start" className="panel landing-container">
                 <div className="welcome-text-container">
                     <div className="hello-text">
                         <span className="typedText"></span>
@@ -32,7 +33,9 @@ export const Landing = () => {
                     </div>
                 </div>
                 <div className="side-container">
-                    <div className="theme-switcher-container">elo3</div>
+                    <div className="theme-switcher-container">
+                        <ThemeSwitcher />
+                    </div>
                     <div className="icons-container">
                         <Icons />
                     </div>
