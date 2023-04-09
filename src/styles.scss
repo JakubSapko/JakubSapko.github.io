@@ -1,6 +1,7 @@
 //shoutout to https://github.com/brandonmcconnell
 @use "./Sections/About/about.scss";
 @use "./components/Menu/menu.scss";
+@use "variables.scss";
 @import "typed";
 @import "./Sections/Landing/Icons/icons.scss";
 @import "./Sections/Landing/landing.scss";
@@ -9,7 +10,7 @@
 
 body {
     margin: 0;
-    background-color: rgba(248, 255, 255, 0.826);
+    background-color: variables.$light-background;
     padding: 0;
     height: 100%;
     width: 100%;
@@ -17,7 +18,7 @@ body {
 }
 
 ::selection {
-    background-color: rgb(255, 175, 69);
+    background-color: variables.$light-orange;
 }
 
 * {

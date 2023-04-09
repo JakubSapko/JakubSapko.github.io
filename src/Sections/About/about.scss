@@ -1,3 +1,4 @@
+@use "../../variables";
 .about-me-container {
     max-width: 90%;
     min-height: 90%;
@@ -21,15 +22,15 @@
     transform: translateX(-100%);
     max-width: 20rem;
     border-radius: 50%;
-    box-shadow: 8px 8px 8px rgb(255, 175, 69);
+    box-shadow: 8px 8px 8px variables.$light-orange;
 }
 
 .node-styling {
-    color: #3c873a;
+    color: variables.$light-node-green;
     font-weight: 600;
 }
 .merck-styling {
-    color: #007a73;
+    color: variables.$light-merck-green;
     font-weight: 600;
 }
 
