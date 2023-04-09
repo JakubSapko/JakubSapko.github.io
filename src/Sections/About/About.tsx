@@ -1,12 +1,13 @@
 import { useRef } from "react";
 import photo from "../../assets/photome.jpg";
+import { Menu } from "../../components/Menu";
 import useIntersectionObserver from "../../hooks/useIntersectionObserver";
 
 export const About = () => {
     const ref = useRef<HTMLDivElement | null>(null);
     const entry = useIntersectionObserver(ref, { freezeOnceVisible: true });
     const isVisible = !!entry?.isIntersecting;
-    console.log(isVisible);
+
     const getAge = () => {
         const birthday = new Date("03/08/1999");
         const ageDifMs = Date.now() - birthday.getTime();
@@ -16,7 +17,7 @@ export const About = () => {
 
     return (
         <>
-            <div className="panel">
+            <div id="about" className="panel">
                 <h1 className="important-text heading">About me</h1>
                 <div className="about-me-container">
                     <div className="photo-container">
@@ -40,13 +41,7 @@ export const About = () => {
                 </div>
             </div>
             <div ref={ref} />
-            {isVisible ? (
-                <div className="menu">
-                    <p>1-About</p>
-                    <p>2-test</p>
-                    <p>3-test</p>
-                </div>
-            ) : null}
+            {isVisible ? <Menu /> : null}
         </>
     );
 };

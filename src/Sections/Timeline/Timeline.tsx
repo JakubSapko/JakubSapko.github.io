@@ -1,3 +1,7 @@
 export const Timeline = () => {
-    return <div className="panel">Timeline section placeholder</div>;
+    return (
+        <div id="timeline" className="panel">
+            Timeline section placeholder
+        </div>
+    );
 };

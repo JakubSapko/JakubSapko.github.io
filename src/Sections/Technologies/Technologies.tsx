@@ -1,3 +1,7 @@
 export const Technologies = () => {
-    return <div className="panel">Technologies section placeholder</div>;
+    return (
+        <div id="technologies" className="panel">
+            Technologies section placeholder
+        </div>
+    );
 };

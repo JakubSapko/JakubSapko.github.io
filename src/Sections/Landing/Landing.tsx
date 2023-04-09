@@ -9,7 +9,7 @@ export const Landing = () => {
     };
     return (
         <>
-            <div className="landing-container">
+            <div id="start" className="landing-container">
                 <div className="welcome-text-container">
                     <div className="hello-text">
                         <span className="typedText"></span>
