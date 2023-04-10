@@ -1,12 +1,9 @@
 import { useEffect, useState } from "react";
+import { Theme, useThemeContext } from "../../context/ThemeContext";
 import "./switcher.scss";
 
-enum Theme {
-    LIGHT = "light",
-    DARK = "dark",
-}
 export const ThemeSwitcher = () => {
-    const [theme, setTheme] = useState<Theme>(Theme.LIGHT);
+    const { theme, setTheme } = useThemeContext();
     useEffect(() => {
         setTheme(Theme.LIGHT);
         document.documentElement.setAttribute("data-theme", "light");
