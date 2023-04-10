@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import "./switcher.scss";
 
 enum Theme {
     LIGHT = "light",
@@ -20,5 +21,17 @@ export const ThemeSwitcher = () => {
             setTheme(Theme.LIGHT);
         }
     };
-    return <div onClick={() => switchTheme()}>Switch theme</div>;
+    return (
+        <div className="switcher-container">
+            {/* <input
+                type="checkbox"
+                id="themeSwitch"
+                name="theme-switch"
+                className="theme-switch__input"
+            />
+            <label htmlFor="themeSwitch" className="theme-switch__label">
+                <span>Switch theme</span>
+            </label> */}
+        </div>
+    );
 };
