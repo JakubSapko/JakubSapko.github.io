@@ -23,15 +23,16 @@ export const ThemeSwitcher = () => {
     };
     return (
         <div className="switcher-container">
-            {/* <input
+            <input
                 type="checkbox"
                 id="themeSwitch"
                 name="theme-switch"
                 className="theme-switch__input"
+                onClick={() => switchTheme()}
             />
             <label htmlFor="themeSwitch" className="theme-switch__label">
                 <span>Switch theme</span>
-            </label> */}
+            </label>
         </div>
     );
 };
