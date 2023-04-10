@@ -7,7 +7,7 @@
     justify-content: center;
     align-items: center;
     align-content: center;
-    gap: 5rem;
+    gap: 3rem;
     margin: auto;
 }
 
@@ -26,11 +26,11 @@
 }
 
 .node-styling {
-    color: variables.$light-node-green;
+    color: var(--color-node);
     font-weight: 600;
 }
 .merck-styling {
-    color: variables.$light-merck-green;
+    color: var(--color-merck);
     font-weight: 600;
 }
 

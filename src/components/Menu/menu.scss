@@ -5,13 +5,13 @@
     right: 0%;
     top: 40%;
     margin-right: 2rem;
-    color: variables.$light-primary-grey;
+    color: var(--color-menu-primary);
     font-size: 16px;
     font-weight: 500;
     opacity: 0%;
     p:hover {
         cursor: pointer;
-        color: variables.$light-secondary-grey;
-        text-decoration: underline 1.5px solid variables.$light-orange;
+        color: var(--color-menu-secondary);
+        text-decoration: underline 1.5px solid var(--color-selection);
     }
 }

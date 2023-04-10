@@ -6,18 +6,17 @@ enum Theme {
 }
 export const ThemeSwitcher = () => {
     const [theme, setTheme] = useState<Theme>(Theme.LIGHT);
+    useEffect(() => {
+        setTheme(Theme.LIGHT);
+        document.documentElement.setAttribute("data-theme", "light");
+    }, []);
 
     const switchTheme = () => {
-        const sections = [...document.getElementsByClassName("panel")];
         if (theme === Theme.LIGHT) {
-            sections.forEach((section) => {
-                section.classList.add("night");
-            });
+            document.documentElement.setAttribute("data-theme", "dark");
             setTheme(Theme.DARK);
         } else {
-            sections.forEach((section) => {
-                section.classList.remove("night");
-            });
+            document.documentElement.setAttribute("data-theme", "light");
             setTheme(Theme.LIGHT);
         }
     };
