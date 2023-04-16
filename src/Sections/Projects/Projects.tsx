@@ -1,7 +1,7 @@
 export const Projects = () => {
     return (
         <div id="projects" className="panel">
-            Projects section placeholder
+            <h1 className="important-text heading">Projects</h1>
         </div>
     );
 };

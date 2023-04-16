@@ -1,4 +1,11 @@
 @use "../../variables";
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .about-me-container {
     max-width: 90%;
     min-height: 90%;
@@ -70,7 +77,13 @@
 
 @media (max-width: 880px) {
     .layout-container {
-        gap: 20rem;
+        gap: 15rem;
+    }
+    .side-container {
+        max-height: 70%;
+    }
+    .switcher-container {
+        visibility: hidden;
     }
     .menu {
         visibility: hidden;

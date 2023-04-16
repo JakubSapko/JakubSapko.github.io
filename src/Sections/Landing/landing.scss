@@ -11,9 +11,10 @@
     display: flex;
     flex-direction: column;
     font-size: 32px;
-    place-self: center;
     gap: 3rem;
     margin: 1.5rem;
+    height: 100%;
+    margin-top: 25%;
 }
 
 .hello-text {
@@ -84,13 +85,6 @@
 }
 
 .theme-switcher-container {
-}
-
-.icons-container {
-    margin-top: auto;
-    margin-bottom: 1rem;
-    align-self: flex-end;
-    place-self: center;
 }
 
 .down-hand {

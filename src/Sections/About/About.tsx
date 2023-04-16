@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 import photo from "../../assets/photome.jpg";
 import { Menu } from "../../components/Menu/Menu";
 import useIntersectionObserver from "../../hooks/useIntersectionObserver";
+import { Icons } from "../Landing/Icons/Icons";
 
 export const About = () => {
     const ref = useRef<HTMLDivElement | null>(null);
@@ -32,32 +33,36 @@ export const About = () => {
     }, [isHeaderVisible]);
     return (
         <>
-            <div id="about" className="panel">
-                <h1 ref={headerRef} className="important-text heading">
-                    About me
-                </h1>
-                <div className="about-me-container">
-                    <div className="photo-container">
-                        <img
-                            src={photo}
-                            id="photoOfMe"
-                            alt="A cool photo of me"
-                            className="photo"
-                        />
-                    </div>
-                    <div ref={ref} />
-                    <div id="text-container" className="text-container">
-                        I'm a {getAge()} years old software developer from
-                        Poland, currently stationed in Warsaw. Currently I'm
-                        focused on a
-                        <span className="node-styling"> node.js</span>{" "}
-                        development environment. I've been studying Physics for
-                        two years before I decided to switch my Bachelor studies
-                        to Computer Science, which I'm finishing next year.
-                        Currently employed as a Software Developer and a Team
-                        Leader in <span className="merck-styling">Merck</span>.
+            <div id="about" className="panel about">
+                <div>
+                    <h1 ref={headerRef} className="important-text heading">
+                        About me
+                    </h1>
+                    <div className="about-me-container">
+                        <div className="photo-container">
+                            <img
+                                src={photo}
+                                id="photoOfMe"
+                                alt="A cool photo of me"
+                                className="photo"
+                            />
+                        </div>
+                        <div ref={ref} />
+                        <div id="text-container" className="text-container">
+                            I'm a {getAge()} years old software developer from
+                            Poland, currently stationed in Warsaw. Currently I'm
+                            focused on a
+                            <span className="node-styling"> node.js</span>{" "}
+                            development environment. I've been studying Physics
+                            for two years before I decided to switch my Bachelor
+                            studies to Computer Science, which I'm finishing
+                            next year. Currently employed as a Software
+                            Developer and a Team Leader in{" "}
+                            <span className="merck-styling">Merck</span>.
+                        </div>
                     </div>
                 </div>
+                <Icons />
             </div>
             <Menu isVisible={isVisible} />
         </>

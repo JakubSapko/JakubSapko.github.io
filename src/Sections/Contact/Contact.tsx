@@ -3,7 +3,7 @@ import { ContactForm } from "../../components/ContactForm";
 export const Contact = () => {
     return (
         <div id="contact" className="panel">
-            <p>Contact section</p>
+            <h1 className="important-text heading">Contact</h1>
             <ContactForm />
         </div>
     );

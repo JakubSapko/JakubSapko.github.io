@@ -2,7 +2,7 @@
     "name": "portfolio_v2",
     "version": "0.0.0",
     "scripts": {
-        "dev": "vite",
+        "dev": "vite --host",
         "build": "tsc && vite build",
         "serve": "vite preview",
         "lint:fix": "eslint ./src --ext .jsx,.js,.ts,.tsx --quiet --fix --ignore-path ./.gitignore",
@@ -12,9 +12,13 @@
         "deploy": "npm run build && gh-pages -d dist"
     },
     "dependencies": {
+        "@egjs/grid": "^1.13.0",
+        "@egjs/react-flicking": "^4.10.8",
+        "@egjs/react-grid": "^1.14.0",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
         "react-icons": "^4.8.0",
+        "react-vertical-timeline-component": "^3.6.0",
         "sass": "^1.60.0",
         "use-local-storage": "^2.3.6"
     },
@@ -22,6 +26,7 @@
         "@types/node": "^18.15.11",
         "@types/react": "^18.0.33",
         "@types/react-dom": "^18.0.11",
+        "@types/react-vertical-timeline-component": "^3.3.3",
         "@typescript-eslint/eslint-plugin": "^5.57.1",
         "@typescript-eslint/parser": "^5.57.1",
         "@vitejs/plugin-react": "^3.1.0",

@@ -36,9 +36,6 @@ export const Landing = () => {
                     <div className="theme-switcher-container">
                         <ThemeSwitcher />
                     </div>
-                    <div className="icons-container">
-                        <Icons />
-                    </div>
                 </div>
             </div>
         </>
