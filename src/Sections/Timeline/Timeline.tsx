@@ -8,7 +8,7 @@ import "./timeline.scss";
 export const Timeline = () => {
     return (
         <div id="timeline" className="panel">
-            {/* <h1 className="important-text heading">Timeline</h1>
+            <h1 className="important-text heading">Timeline</h1>
             <div className="timeline-container">
                 <VerticalTimeline>
                     <VerticalTimelineElement
@@ -20,124 +20,156 @@ export const Timeline = () => {
                         contentArrowStyle={{
                             borderRight: "7px solid  rgb(33, 150, 243)",
                         }}
-                        date="2011 - present"
+                        date="Feb. 2023 - present"
                         iconStyle={{
                             background: "rgb(33, 150, 243)",
                             color: "#fff",
                         }}
                     >
                         <h3 className="vertical-timeline-element-title">
-                            Creative Director
+                            Software Developer & Team Leader
                         </h3>
                         <h4 className="vertical-timeline-element-subtitle">
-                            Miami, FL
+                            MSD (Merck)
                         </h4>
                         <p>
-                            Creative Direction, User Experience, Visual Design,
-                            Project Management, Team Leading
+                            Developement of web applications, team leader,
+                            solution consultant. Primarly using React, Node.js,
+                            TypeScript and Python.
                         </p>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
                         className="vertical-timeline-element--work"
-                        date="2010 - 2011"
+                        date="May 2022 - Feb. 2023"
                         iconStyle={{
                             background: "rgb(33, 150, 243)",
                             color: "#fff",
                         }}
                     >
                         <h3 className="vertical-timeline-element-title">
-                            Art Director
+                            Software Developer
                         </h3>
                         <h4 className="vertical-timeline-element-subtitle">
-                            San Francisco, CA
+                            MSD (Merck)
                         </h4>
                         <p>
-                            Creative Direction, User Experience, Visual Design,
-                            SEO, Online Marketing
+                            Developement of web applications, occasional data
+                            analysis. I was one of the leading figures in a
+                            collaboration of our team with summer internship
+                            participants from USA.
                         </p>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
                         className="vertical-timeline-element--work"
-                        date="2008 - 2010"
+                        date="Nov. 2021 - May 2022"
                         iconStyle={{
                             background: "rgb(33, 150, 243)",
                             color: "#fff",
                         }}
                     >
                         <h3 className="vertical-timeline-element-title">
-                            Web Designer
+                            Intern Data Analyst
                         </h3>
                         <h4 className="vertical-timeline-element-subtitle">
-                            Los Angeles, CA
+                            MSD (Merck)
                         </h4>
-                        <p>User Experience, Visual Design</p>
+                        <p>
+                            Maintaining existing codebase. After first two
+                            months I proposed a possible solution for one of the
+                            buisness issues and was assigned as a main developer
+                            in this project.
+                        </p>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
                         className="vertical-timeline-element--work"
-                        date="2006 - 2008"
+                        date="Sep. 2021"
                         iconStyle={{
                             background: "rgb(33, 150, 243)",
                             color: "#fff",
                         }}
                     >
                         <h3 className="vertical-timeline-element-title">
-                            Web Designer
+                            University switch
                         </h3>
                         <h4 className="vertical-timeline-element-subtitle">
-                            San Francisco, CA
+                            Warsaw, PL
                         </h4>
-                        <p>User Experience, Visual Design</p>
+                        <p>
+                            After noticing that I spend majority of time
+                            learning more about Computer Science and programming
+                            rather than Physics I decided to switch my studies
+                            accordingly.
+                        </p>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
                         className="vertical-timeline-element--education"
-                        date="April 2013"
+                        date="2019-2021"
                         iconStyle={{
                             background: "rgb(233, 30, 99)",
                             color: "#fff",
                         }}
                     >
                         <h3 className="vertical-timeline-element-title">
-                            Content Marketing for Web, Mobile and Social Media
+                            Workshops
                         </h3>
                         <h4 className="vertical-timeline-element-subtitle">
-                            Online Course
-                        </h4>
-                        <p>Strategy, Social Media</p>
-                    </VerticalTimelineElement>
-                    <VerticalTimelineElement
-                        className="vertical-timeline-element--education"
-                        date="November 2012"
-                        iconStyle={{
-                            background: "rgb(233, 30, 99)",
-                            color: "#fff",
-                        }}
-                    >
-                        <h3 className="vertical-timeline-element-title">
-                            Agile Development Scrum Master
-                        </h3>
-                        <h4 className="vertical-timeline-element-subtitle">
-                            Certification
+                            Warsaw, PL
                         </h4>
                         <p>
-                            Creative Direction, User Experience, Visual Design
+                            I attended a series of programming-related courses
+                            and workshops provided by my University (as well as
+                            other universities and institutions in Warsaw) which
+                            sparked my interest in programming - mainly Django
+                            web development.
                         </p>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
                         className="vertical-timeline-element--education"
-                        date="2002 - 2006"
+                        date="2019-2022"
                         iconStyle={{
                             background: "rgb(233, 30, 99)",
                             color: "#fff",
                         }}
                     >
                         <h3 className="vertical-timeline-element-title">
-                            Bachelor of Science in Interactive Digital Media
-                            Visual Imaging
+                            Physics
                         </h3>
                         <h4 className="vertical-timeline-element-subtitle">
-                            Bachelor Degree
+                            University of Warsaw, Warsaw, PL
                         </h4>
-                        <p>Creative Direction, Visual Design</p>
+                        <p>
+                            After I graduated high school I decided to start my
+                            Bachelor studies at University of Warsaw, trying to
+                            major in Physics. Later on I reflected on that
+                            decision and decided to switch to Computer Science.
+                            This 2 year adventure resulted in me getting a solid
+                            foundation in Physics, complex Mathematics and
+                            programming basics. I also got to know a lot of
+                            great people, which is the biggest value in this
+                            episode of my life.
+                        </p>
+                    </VerticalTimelineElement>
+                    <VerticalTimelineElement
+                        className="vertical-timeline-element--education"
+                        date="2019"
+                        iconStyle={{
+                            background: "rgb(233, 30, 99)",
+                            color: "#fff",
+                        }}
+                    >
+                        <h3 className="vertical-timeline-element-title">
+                            Kazimierz Wielki High School
+                        </h3>
+                        <h4 className="vertical-timeline-element-subtitle">
+                            Leczyca, PL
+                        </h4>
+                        <p>
+                            I graduated from a high school in my hometown,
+                            embarking on a new, great adventure. This was the
+                            time when I developed a deep passion for science.
+                            During my first year in high school I also got the
+                            FCE certification with grade B.{" "}
+                        </p>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
                         iconStyle={{
@@ -146,7 +178,7 @@ export const Timeline = () => {
                         }}
                     />
                 </VerticalTimeline>
-            </div> */}
+            </div>
         </div>
     );
 };
