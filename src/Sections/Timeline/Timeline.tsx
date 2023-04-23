@@ -39,6 +39,7 @@ export const Timeline = () => {
                         </p>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
+                        textClassName="timeline-text-even"
                         className="vertical-timeline-element--work"
                         date="May 2022 - Feb. 2023"
                         iconStyle={{
@@ -60,6 +61,7 @@ export const Timeline = () => {
                         </p>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
+                        textClassName="timeline-text-odd"
                         className="vertical-timeline-element--work"
                         date="Nov. 2021 - May 2022"
                         iconStyle={{
@@ -81,6 +83,7 @@ export const Timeline = () => {
                         </p>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
+                        textClassName="timeline-text-even"
                         className="vertical-timeline-element--work"
                         date="Sep. 2021"
                         iconStyle={{
@@ -102,6 +105,7 @@ export const Timeline = () => {
                         </p>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
+                        textClassName="timeline-text-odd"
                         className="vertical-timeline-element--education"
                         date="2019-2021"
                         iconStyle={{
@@ -124,6 +128,7 @@ export const Timeline = () => {
                         </p>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
+                        textClassName="timeline-text-even"
                         className="vertical-timeline-element--education"
                         date="2019-2022"
                         iconStyle={{
@@ -150,6 +155,7 @@ export const Timeline = () => {
                         </p>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
+                        textClassName="timeline-text-odd"
                         className="vertical-timeline-element--education"
                         date="2019"
                         iconStyle={{

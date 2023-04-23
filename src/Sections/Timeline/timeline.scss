@@ -1,4 +1,18 @@
 .timeline-container {
     max-height: 90%;
+    max-width: 80%;
     overflow-y: auto;
+    margin: auto;
+}
+
+.timeline-text-odd {
+    color: var(--color-txt);
+    background-color: var(--color-bg);
+    border: 1px solid var(--color-selection);
+    box-shadow: 0.25rem 0.25rem 5px var(--color-selection);
+}
+
+.timeline-text-even {
+    @extend .timeline-text-odd;
+    box-shadow: -0.25rem -0.25rem 5px var(--color-selection);
 }
