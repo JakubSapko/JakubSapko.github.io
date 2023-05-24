@@ -18,6 +18,8 @@ html[data-theme="light"] {
     --color-menu-primary: #{variables.$light-primary-grey};
     --color-menu-secondary: #{variables.$light-secondary-grey};
     --line-color: #{variables.$light-purple} !important;
+    --color-card-bg: #{variables.$light-orange};
+    --ant-form-item-text: #{variables.$light-txt};
 }
 
 html[data-theme="dark"] {
@@ -30,6 +32,8 @@ html[data-theme="dark"] {
     --color-menu-primary: #{variables.$dark-primary-white};
     --color-menu-secondary: #{variables.$dark-secondary-white};
     --line-color: #{variables.$dark-txt} !important;
+    --color-card-bg: #{variables.$dark-bisque};
+    --ant-form-item-text: #{variables.$dark-txt};
 }
 
 .important-text {

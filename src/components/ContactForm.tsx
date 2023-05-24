@@ -67,6 +67,7 @@ export const ContactForm = () => {
             >
                 <Form.Item
                     label="Your Name"
+                    className="contact-form-item"
                     name="name"
                     rules={[
                         {
@@ -81,6 +82,7 @@ export const ContactForm = () => {
                 <Form.Item
                     label="Email"
                     name="email"
+                    className="contact-form-item"
                     rules={[
                         {
                             required: true,
@@ -95,6 +97,7 @@ export const ContactForm = () => {
                 <Form.Item
                     label="Your message"
                     name="message"
+                    className="contact-form-item"
                     rules={[
                         {
                             required: true,
