@@ -56,9 +56,12 @@ export const About = () => {
                             development environment. I've been studying Physics
                             for two years before I decided to switch my Bachelor
                             studies to Computer Science, which I'm finishing
-                            next year. Currently employed as a Software
-                            Developer and a Team Leader in{" "}
-                            <span className="merck-styling">Merck</span>.
+                            next year.
+                            <p>
+                                Currently employed as a Software Developer and a
+                                Team Leader in{" "}
+                                <span className="merck-styling">Merck</span>.
+                            </p>
                         </div>
                     </div>
                 </div>

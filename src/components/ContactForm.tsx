@@ -54,7 +54,11 @@ export const ContactForm = () => {
                 name="basic"
                 labelCol={{ span: 10 }}
                 wrapperCol={{ span: 20 }}
-                style={{ width: "100%" }}
+                style={{
+                    width: "60%",
+                    marginLeft: "5.25rem",
+                    marginRight: "auto",
+                }}
                 initialValues={{ remember: true }}
                 onFinish={onFinish}
                 onFinishFailed={onFinishFailed}
