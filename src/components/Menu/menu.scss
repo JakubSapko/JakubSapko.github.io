@@ -1,6 +1,12 @@
 @use "../../variables";
 
 .menu {
+    display: none;
+
+    @media screen and (min-width: 880px) {
+        display: block;
+    }
+
     position: fixed;
     right: 0%;
     top: 40%;
