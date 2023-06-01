@@ -96,7 +96,6 @@ export const Projects = () => {
                     width="30%"
                     margin="0 auto"
                     offset={2}
-                    showArrows={false}
                 />
             </div>
         </div>

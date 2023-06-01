@@ -3,7 +3,15 @@ import React, { useState } from "react";
 import { useSpring, animated } from "react-spring";
 import Button from "./Button";
 
-export const Card = ({
+interface CardProps {
+    imagen: string;
+    title: string;
+    description: string;
+    hasDemo?: boolean;
+    technologies: string[];
+    codeLink?: string;
+}
+export const Card: React.FC<CardProps> = ({
     imagen,
     title,
     description,

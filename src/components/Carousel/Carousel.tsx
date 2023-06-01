@@ -1,19 +1,27 @@
 import Carousel from "react-spring-3d-carousel";
-import { useState, useEffect, memo, useRef } from "react";
+import { useState, useEffect, memo, useRef, SetStateAction } from "react";
 import { config } from "react-spring";
 import { useSyncExternalStore } from "react";
 
-export default function Carroussel(props) {
-    const table = props.cards.map((element, index) => {
-        return { ...element, onClick: () => setIndex(index) };
-    });
+export default function Carroussel(props: {
+    cards: any[];
+    offset: number;
+    width: any;
+    height: any;
+    margin: any;
+}) {
+    const table = props.cards.map(
+        (element: any, index: SetStateAction<number>) => {
+            return { ...element, onClick: () => setIndex(index) };
+        }
+    );
 
     const [offsetRadius, setOffsetRadius] = useState(2);
     const [cards] = useState(table);
 
     const [index, setIndex] = useState(0);
     const [isAutoplayed, setIsAutoplayed] = useState(true);
-    const autoPlayRef = useRef();
+    const autoPlayRef = useRef<any>(null);
 
     useEffect(() => {
         clearInterval(autoPlayRef.current);
@@ -24,9 +32,7 @@ export default function Carroussel(props) {
         }
         return () => clearInterval(autoPlayRef.current);
     }, [isAutoplayed]);
-    useEffect(() => {
-        setOffsetRadius(props.offset);
-    }, [props.offset]);
+    useEffect(() => setOffsetRadius(props.offset), [props.offset]);
 
     return (
         <div
@@ -35,13 +41,13 @@ export default function Carroussel(props) {
                 height: props.height,
                 margin: props.margin,
             }}
-            ref={autoPlayRef}
         >
             <Carousel
                 slides={cards}
                 goToSlide={index}
                 offsetRadius={offsetRadius}
                 animationConfig={config.gentle}
+                showNavigation={false}
             />
         </div>
     );
