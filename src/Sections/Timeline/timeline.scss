@@ -1,5 +1,8 @@
 .timeline-container {
-    max-height: 90%;
+    @media screen and (min-width: 880px) {
+        max-height: 90%;
+    }
+
     max-width: 80%;
     overflow-y: auto;
     margin: auto;
