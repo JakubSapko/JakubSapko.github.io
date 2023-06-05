@@ -3,10 +3,8 @@ import { Icons } from "./Icons/Icons";
 
 export const Landing = () => {
     const scrollToBottom = () => {
-        window.scrollTo({
-            top: document.documentElement.scrollHeight,
-            behavior: "smooth",
-        });
+        const contactForm = document.getElementById("contact");
+        contactForm?.scrollIntoView({ behavior: "smooth" });
     };
     return (
         <>
